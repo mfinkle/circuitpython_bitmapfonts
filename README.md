@@ -1,5 +1,5 @@
 ## Introduction
-Adafruit's framebuf library supports some bitmap font rendering capabilities. The library already includes a bitmap font render (`BitmapFont`) and a classic 5x8 based font, called `font5x8.bin`. CircuitPython BitmapFonts ships a 3x8 based font which can be useful for smaller displays.
+Adafruit's framebuf library supports some bitmap font rendering capabilities. The library already includes a bitmap font render (`BitmapFont`) and a classic 5x8 based font, called `font5x8.bin`. CircuitPython BitmapFonts includes a 3x8 and 3x6 based fonts which can be useful for smaller displays.
 
 ## Dependencies
 This code depends on:
@@ -46,3 +46,11 @@ while True:
 **font3x8.bin**
 
 * Binary font3x8 file, ready to be used with [Adafruit framebuf](https://github.com/adafruit/Adafruit_CircuitPython_framebuf) `FrameBuffer` and `BitmapFont` based code.
+
+**font3x6_to_bin.py**
+
+* Script that contains the raw bitmap font structure for font3x6. You can generate the binary file by running `python3 font3x6_to_bin.py`. The 3x6 font is based on the `tomthumb` [font](http://robey.lag.net/2010/01/23/tiny-monospace-font.html).
+
+**font3x6.bin**
+
+* Binary font3x6 file, ready to be used with [Adafruit framebuf](https://github.com/adafruit/Adafruit_CircuitPython_framebuf) `FrameBuffer` and `BitmapFont` based code.
